@@ -1,0 +1,91 @@
+body {
+  display:flex;
+  height:100vh;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  background: linear-gradient(hsl(136,32%,45%), hsl(0,0%,70%), hsl(137,9%,49%));
+  }
+
+  .App {
+    display:flex;
+    flex-flow: column wrap;
+    min-height:400px;
+    max-height:400px;
+    max-width:600px;
+    align-items: center;
+    /* border: 2px solid black; */
+    overflow: hidden;
+}
+
+#top {
+  display: flex;
+  flex-flow: column;
+  width:100%;
+  flex:1;
+  justify-content: center;
+  /* border:2px solid yellow; */
+  align-content: center;
+  align-items: center;
+  transition: 1s;
+  opacity: 0;
+}
+
+#top > * {
+margin:10px;
+}
+
+.submit {
+  width:9em;
+  border:1.5px solid #e8e8e8;
+  /* transition: 1s; */
+  text-align:center;
+  font-size: 15px;
+  padding:1em;
+  color:#e8e8e8;
+  font-family: 'Josefin Sans', sans-serif;
+  cursor: pointer;
+  border-right: none;
+  border-left: none;
+  font-weight: bold;
+
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+h1 {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  margin:0;
+  flex:8;
+  /* border:2px solid green; */
+  text-align: center;
+  line-height: 200%;
+  font-size: 18px;
+  color:#e8e8e8;
+  font-family: 'Josefin Sans', sans-serif;
+  opacity:0;
+  transition:1s;
+}
+
+#author {
+  font-size: 14px;
+}
+
+.twit {
+  width:9em;
+  display: flex;
+  justify-content: center;
+}
+
+img {
+  width:2.5em;
+  height:2.5em;
+  cursor: pointer;
+}
